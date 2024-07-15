@@ -1,0 +1,39 @@
+.bottom-content
+{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.commissions-title {
+    /* position: absolute;
+    top: 130%; */
+    z-index: 1;
+    color: white;
+    text-shadow: 0 0 10px #7a2dff, 0 0 20px #7a2dff, 0 0 30px #7a2dff, 0 0 40px #7a2dff;
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; /* Remove the default arrow icons */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto; /* Adjust the width as needed */
+    background: transparent; /* Make the background transparent */
+}
+
+.carousel-control-prev::before,
+.carousel-control-next::before {
+    content: '‹'; /* Use a less-than sign for the previous arrow */
+    color: #7a2dff; /* Set the color to purple */
+    font-size: 5em; /* Increase the size */
+    text-shadow: 0 0 10px #7a2dff, 0 0 20px #7a2dff, 0 0 30px #7a2dff, 0 0 40px #7a2dff; /* Add a neon glow */
+}
+
+.carousel-control-next::before {
+    content: '›'; /* Use a greater-than sign for the next arrow */
+}

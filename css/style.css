@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@keyframes popEffect {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+body {
+    min-height: 100vh;
+    background: #060c17;
+    animation: popEffect 0.6s ease-in-out;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bubbles {
+    position: fixed;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #d6d6d6;
+    margin: 0.4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #23576344,
+    0 0 50px #d6d6d6,
+    0 0 100px #d6d6d6;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s /var(--i)); /* Change the speed and spread it out */
+}
+
+.bubbles span:nth-child(even)
+{
+    background: #7a2dff;
+    box-shadow: 0 0 0 10px #23576344,
+    0 0 50px #7a2dff,
+    0 0 100px #7a2dff;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+.content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.buttons
+{
+    margin-bottom: 20px;
+}
+
+.button
+{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 25px; /* Round edges */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+    background-image: url('/images/sky.jpg');
+}
+
+.button:hover
+{
+    opacity: 0.8;
+    box-shadow: 0 0 20px rgba(122, 45, 255, 0.8); /* Glowing effect */
+}

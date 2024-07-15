@@ -1,0 +1,71 @@
+.image
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: url('https://images.unsplash.com/photo-1612838320303-4b3b3b3b3b3b') no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #5720b68f,
+    0 0 50px #d6d6d6,
+    0 0 100px #d6d6d6;
+    margin-bottom: 60px;
+}
+
+.image img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid #7a2dff;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+#typewriter-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 4px solid #7a2dff; */
+}
+
+@keyframes blink-caret {
+    from, to {
+        background-color: transparent;
+    }
+    50% {
+        background-color: #7a2dff;
+    }
+}
+
+#typewriter-text::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    transform: translateY(-12%);
+    background-color: #7a2dff;
+    animation: blink-caret 1s ease-in-out infinite;
+    vertical-align: bottom;
+}
+
+.social-media a
+{
+    margin: 0 10px;
+}
+
+.social-media img
+{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover
+{
+    transform: scale(1.2);
+}

@@ -1,0 +1,94 @@
+body {
+    min-height: 100vh;
+}
+
+.donations-title {
+    /* position: absolute;
+    top: 130%; */
+    z-index: 1;
+    color: white;
+    text-shadow: 0 0 10px #7a2dff, 0 0 20px #7a2dff, 0 0 30px #7a2dff, 0 0 40px #7a2dff;
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+.donations-text {
+    z-index: 1;
+    color: white;
+    text-shadow: 0 0 10px black, 0 0 20px #ff2d8f, 0 0 30px #ff2d65, 0 0 40px #7a2dff;
+    font-size: 120%;
+    margin-top: 5%;
+}
+
+.donations-text2 {
+    z-index: 1;
+    color: white;
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    text-shadow: 0 0 10px black, 0 0 20px #ff2d8f, 0 0 30px #ff2d65, 0 0 40px #7a2dff;
+    font-size: 120%;
+    margin-top: 3%;
+}
+
+.donations-buttons a
+{
+    margin: 0 30px;
+}
+
+.donations-buttons img
+{
+    margin-top: 80px;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+.donations-buttons img:hover
+{
+    transform: scale(1.2);
+}
+
+.box {
+    flex: 1;
+    margin: 15px;
+    box-shadow: -1px 0 10px #000000;
+    padding: 1%;
+    text-align: center;
+    display: flex; /* Add this line */
+    align-items: center; /* Add this line */
+    justify-content: center; /* Add this line */
+    flex-direction: column; /* Add this line */
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    z-index: 3;
+    box-shadow: 0 0 10px #7a2dff, 0 0 20px #7a2dff, 0 0 30px #7a2dff, 0 0 40px #7a2dff;
+}
+
+.box img {
+    max-width: 300px; /* Add this line */
+    height: auto; /* Add this line */
+    object-fit: contain; /* Add this line */
+}
+
+.box:nth-child(2) img {
+    margin: 25% 0 40% 0; /* Add this line */
+}
+
+.donations-row {
+    display: flex;
+    margin-top: 5%;
+    align-items: stretch; /* Change this line */
+}
+
+#img-paypal {
+    aspect-ratio: 1/1;
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+}
